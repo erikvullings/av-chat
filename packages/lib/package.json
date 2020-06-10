@@ -1,6 +1,6 @@
 {
   "name": "peerjs-av-chat",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "A library to setup a single peerjs-based audio-video-chat connection between two peers.",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -17,7 +17,7 @@
     "patch-release": "npm run build && npm version patch --force -m \"Patch release\" && npm run publish",
     "minor-release": "npm run build && npm version minor --force -m \"Minor release\" && npm run publish",
     "major-release": "npm run build && npm version major --force -m \"Major release\" && npm run publish",
-    "nopublish": "git commit package.json -m \"version bump\" && npm publish && git push --follow-tags"
+    "publish": "git commit package.json -m \"version bump\" && npm publish && git push --follow-tags"
   },
   "keywords": [],
   "author": "Erik Vullings <erik.vullings@gmail.com> (http://www.tno.nl)",
