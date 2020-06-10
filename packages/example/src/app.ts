@@ -22,6 +22,7 @@ const showStreams = ({ stream, remoteStream }: { stream: MediaStream; remoteStre
 
 const setupConnection = async (id: string) => {
   peerConnection = await peerService.initialize(id, {
+    // ngrok tunnel - please replace with your own tunnel
     host: 'f5dec6bf20c1.ngrok.io',
     port: 443,
     path: '/myapp',
