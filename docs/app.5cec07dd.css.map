@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/styles.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA","file":"app.5cec07dd.css","sourceRoot":"..\\packages\\example","sourcesContent":[".flex-container {\r\n  display: flex;\r\n  flex-direction: row;\r\n}\r\n"]}

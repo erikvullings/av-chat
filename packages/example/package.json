@@ -1,0 +1,28 @@
+{
+  "name": "peerjs",
+  "version": "0.0.0",
+  "private": true,
+  "description": "An example project for the peerjs-av-chat library.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "secure_server": "peerjs --port 9000 --key peerjs --path /myapp --sslkey ./localhost.key --sslcert ./localhost.crt",
+    "server": "peerjs --port 9000 --key peerjs --path /myapp",
+    "dev": "parcel index.html --https --out-dir ../../docs",
+    "build:domain": "parcel build index.html --out-dir ../../docs --public-url https://erikvullings.github.io/mithril-leaflet && cp favicon.ico ../../docs/",
+    "link": "pnpm link peerjs-av-chat",
+    "build": "npm run clean && npm run build:domain"
+  },
+  "keywords": [],
+  "author": "Erik Vullings <erik.vullings@gmail.com> (http://www.tno.nl)",
+  "license": "MIT",
+  "dependencies": {
+    "mithril": "2.0.4"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "@types/mithril": "1.1.12",
+    "parcel-bundler": "1.12.4",
+    "typescript": "^3.9.3"
+  }
+}

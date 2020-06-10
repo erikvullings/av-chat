@@ -1,0 +1,30 @@
+{
+  "name": "peerjs-av-chat",
+  "version": "0.0.1",
+  "description": "Audio-video chat library using peerjs.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "pnpm run link -r",
+    "secure_server": "peerjs --port 9000 --key peerjs --path /myapp --sslkey ./localhost.key --sslcert ./localhost.crt",
+    "dev": "peerjs --port 9000 --key peerjs --path /myapp --allow_discovery",
+    "start": "pnpm run dev -r"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikvullings/peerjs-av-chat.git"
+  },
+  "keywords": [
+    "peerjs",
+    "webrtc"
+  ],
+  "author": "Erik Vullings <erik.vullings@gmail.com> (http://www.tno.nl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erikvullings/peerjs-av-chat/issues"
+  },
+  "homepage": "https://github.com/erikvullings/peerjs-av-chat#readme",
+  "devDependencies": {
+    "pnpm": "5.1.6",
+    "peer": "0.5.3"
+  }
+}

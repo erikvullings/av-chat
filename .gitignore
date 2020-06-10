@@ -1,0 +1,4 @@
+dist
+node_modules
+packages/example/node_modules
+packages/lib/node_modules
