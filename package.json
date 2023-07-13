@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/erikvullings/peerjs-av-chat#readme",
   "devDependencies": {
-    "pnpm": "5.1.6",
+    "pnpm": "6.15.1",
     "peer": "0.5.3"
   }
 }
